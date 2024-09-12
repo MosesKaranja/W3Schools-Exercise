@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+
+		*{
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+				
+		}
+
+		body {
+  			font-family: Arial, Helvetica, sans-serif;
+  			background-color: #f2f2f2;
+  				
+		}
+
+		h1{
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		p{
+			margin-top: 20px;
+			margin-bottom: 20px;
+
+		}
+
+		h2{
+			margin-left: 20px;
+			margin-bottom: 8px
+		}
+
+		label{
+			display: block;
+		}
+
+		label, input[type="text"], input[type="submit"]{
+			margin-bottom: 8px;
+
+		}
+
+		section{
+			width: 100%;
+/*			border: 4px solid yellow;*/
+
+		}
+		form{
+/*			border: 4px solid red;*/
+			margin-left: 20px;
+			margin-right: 20px;
+
+		}
+
+		input[type="text"], select, input[type="submit"]{
+			border-radius: 4px;
+			font-size: 16px;
+
+		}
+
+		input[type="text"]{
+			display: block;
+			width: 100%;
+			padding: 12px;
+
+		}
+
+		input[type="submit"]{
+			width: 100%;
+			padding: 12px;
+			background-color: rgb(0, 130, 0);
+			color: #ffffff;
+
+		}
+
+		input[type="submit"]:hover{
+			cursor: pointer;
+			background-color: rgb(0, 140, 0);
+
+		}
+
+		select{
+			width: 100%;
+			padding: 12px;
+			margin-bottom: 8px
+		}
+
+		@media screen and (max-width:900px){
+			section{
+				width: 100%;
+				margin-right: 20px;
+
+			}
+
+		}
+		
+
+	</style>
+
+</head>
+<body>
+
+	<h2>Location Data</h2>
+
+	<section>
+		
+		<form>
+			<div>
+				<label for="">First Name</label>
+				<input type="text" name="fname" id="fname" placeholder="First Name" />
+			</div>
+
+			<div>
+				<label for="">Last Name</label>
+				<input type="text" name="lname" id="lname" placeholder="Last Name"/>
+			</div>
+
+			<div>
+				<select name="country" id="country">
+				  <option value="kenya">Select Country</option>
+				  <option value="kenya">Kenya</option>
+				  <option value="tanzania">Uganda</option>
+				  <option value="uganda">Tanzania</option>
+				</select>
+			</div>
+
+			<div>
+				<input type="submit" value="Try it Yourself >>" />
+			</div>
+			
+		</form>
+
+	</section>
+
+</body>
+</html>

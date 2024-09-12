@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+
+		}
+
+		nav{
+			background-color: #dddddd;
+			overflow: hidden;
+		}
+
+		ul{
+			float: right;
+			list-style-type: none;
+		}
+
+		li{
+			float: left;
+		}
+
+		ul li a{
+			display: block;
+			padding: 18px;
+			border: 2px solid red;
+		}
+
+		p{
+			margin-top: 8px;
+			margin-bottom: 8px;
+		}
+	</style>
+
+
+</head>
+<body>
+	<!-- Nav using float -->
+	<p><b>Note:</b> If a !DOCTYPE is not specified, floating items can produce unexpected results.</p>
+
+	<p>A background color is added to the links to show the link area. The whole link area is clickable, not just the text.</p>
+
+	<p><b>Note: </b>overflow:hidden; is added to the ul element to prevent li elements from going outside of the list.</p>
+
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+	</nav>
+
+</body>
+</html>

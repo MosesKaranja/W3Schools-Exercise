@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.image-container{
+			position: relative;
+			width: 1000px;
+			height: 350px;
+			border: 5px solid darkred;
+
+		}
+
+		.image-container img{
+			width: 100%;
+  			height: auto;
+  			opacity: 0.3;
+
+		}
+
+		.top-left-text, .top-right-text, .bottom-left-text, .bottom-right-text, .middle-text{
+			position: absolute;
+			color: #ffffff;
+			font-size: 20px;
+
+		}
+
+		.top-left-text{
+			top: 10px;
+			left: 10px;
+
+		}
+
+		.top-right-text{
+			top: 10px;
+			right: 10px;
+
+		}
+
+		.bottom-left-text{
+			bottom: 10px;
+			left: 10px;
+
+		}
+
+		.bottom-right-text{
+			bottom: 10px;
+			right: 10px;
+
+		}
+
+		.middle-text{
+			top: 50%;
+			left: 50%;
+
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<h1>Adding Text to Images</h1>
+	<p>Lets add different texts to images.</p>
+
+	<div class="image-container">
+		<img src="../Images/img_5terre_wide.jpg">
+		<div class="top-left-text">
+			<p>Top Left Text</p>
+		</div>
+
+		<div class="top-right-text">
+			<p>Top Right Text</p>	
+		</div>
+
+		<div class="bottom-left-text">
+			<p>Bottom Left Text</p>
+		</div>
+
+		<div class="bottom-right-text">
+			<p>Bottom Right Text</p>	
+		</div>
+
+		<div class="middle-text">
+			<p>Middle Text</p>			
+		</div>
+	</div>
+
+</body>
+</html>

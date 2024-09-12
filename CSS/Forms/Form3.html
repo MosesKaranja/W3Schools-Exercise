@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+
+		*{
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+				
+		}
+
+		body {
+  			font-family: Arial, Helvetica, sans-serif;
+  			background-color: #f2f2f2;
+  				
+		}
+
+		h1{
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		h2{
+			margin-left: 20px;
+			margin-bottom: 8px;
+
+		}
+
+		p{
+			margin-top: 20px;
+			margin-bottom: 20px;
+			font-size: 16px;
+
+		}
+
+		section{
+			width: 100%;
+
+		}
+
+		form{
+			margin-left: 20px;
+			margin-right: 20px;
+
+		}
+
+		form div{
+			display: flex;
+			align-items: stretch;
+
+		}
+
+		.child-1{
+			width: 10%;
+			
+
+		}
+
+		.child-2{
+			width: 90%;
+
+		}
+
+		label{
+			display: block;
+			margin-bottom: 8px;
+			padding-top: 8px;
+
+		}
+
+		input[type="text"], input[name="search"], textarea[name="story"], select{
+			width: 100%;
+			font-size: 16px;
+			padding: 12px 20px;
+			border-radius: 4px;
+			margin-bottom: 8px;
+			border: 2px solid #ccc;
+		}
+
+
+		input[name="search"]{
+			background-image: url("../Images/searchicon.png");
+			background-repeat: no-repeat;
+			background-position: 10px 10px;
+			padding: 12px 20px 12px 40px;
+
+		}
+
+		input.search-animated{
+			width: 10%;
+			transition:  width 0.4s ease-in-out;
+		}
+
+		input.search-animated:focus{
+			width: 100%;
+		}
+
+		textarea[name="story"]{
+			width: 100%;
+			height: 150px;
+			border: 2px solid #ccc;
+			background-color: #f8f8f8;
+			resize: none;
+
+		}
+
+		select{
+			background-color: #f1f1f1;
+			border: 2px solid #ccc;
+
+		}
+
+		input[type="submit"]{
+			background-color: rgb(0, 130, 0, 0.6);
+			color: #ffffff;
+/*			padding: 16px 24px;*/
+			padding: 16px 32px;
+			border-radius: 4px;
+			text-align: center;
+			font-size: 16px;
+			border: none;
+		}
+
+		input[type="submit"]:hover{
+			cursor: pointer;
+			background-color: rgb(0, 150, 0, 0.6);
+
+		}
+
+		@media screen and (max-width:800px){
+			form div{
+				flex-direction: column;
+				align-items: stretch;
+
+			}
+
+			.child-1{
+				width: 100%;
+			
+
+			}
+
+			.child-2{
+				width: 100%;
+
+			}
+
+
+
+		}
+
+
+
+		
+
+	</style>
+</head>
+<body>
+	<h2>A full-width input field</h2>
+
+	<section>
+		<form>
+			<div>
+				<div class="child-1">
+					<label for="fname">Search Animated</label>
+				</div>
+				<div class="child-2">
+					<input type="text" name="search" class="search-animated" placeholder="Search...">
+				</div>
+			</div>
+
+			<div>
+				<div class="child-1">
+					<label for="fname">Search</label>
+				</div>
+				
+				<div class="child-2">
+					<input type="text" name="search" placeholder="Search...">
+				</div>
+			</div>
+
+			<div>
+				<div class="child-1">
+					<label for="fname">First Name</label>
+				</div>
+				<div class="child-2">
+					<input type="text" name="fname" id="fname" placeholder="First Name">
+				</div>
+			</div>
+
+			<div>
+				<div class="child-1">
+					<label for="lname">Last Name</label>
+				</div>
+				<div class="child-2">
+					<input type="text" name="lname" id="lname" placeholder="Last Name">
+				</div>
+			</div>
+
+			<div>
+				<div class="child-1">
+					<label for="lname">Username</label>
+				</div>
+				
+				<div class="child-2">
+					<input type="text" name="username" id="username" placeholder="Username">
+				</div>
+			</div>
+
+			<div>
+				<div class="child-1">
+					<label for="country">Country</label>
+				</div>
+				
+				<div class="child-2">
+					<select name="country" id="country">
+					  <option value="kenya">Select Country</option>
+					  <option value="kenya">Kenya</option>
+					  <option value="tanzania">Uganda</option>
+					  <option value="uganda">Tanzania</option>
+					</select>
+				</div>
+
+			</div>
+
+			<div>
+				<div class="child-1">
+					<label for="lname">TextArea</label>
+				</div>
+				<div class="child-2">
+					<textarea name="story" placeholder="Some Text..."></textarea>
+				</div>
+			</div>
+
+			<div>
+				<input type="submit" name="submit" value="Submit">
+			</div>
+
+		</form>
+	</section>
+
+</body>
+</html>

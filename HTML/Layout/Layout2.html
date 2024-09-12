@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title></title>
+		<style type="text/css">
+
+			:root {
+			  --mar-left: 20px;
+			  --mar-right: 20px; 
+			  --mar-top: 5px;
+			  --mar-bottom: 5px;
+
+			}
+
+			*{
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+				
+			}
+
+			body {
+  				font-family: Arial, Helvetica, sans-serif;
+  				
+			}
+
+			h1{
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+
+			p{
+				margin-top: 20px;
+				margin-bottom: 20px;
+
+			}
+
+			div{
+				margin-top: 5px;
+				margin-bottom: 5px;
+			}
+
+			.text-center{
+				text-align: center;
+			}
+
+
+			.text-center{
+				text-align: center;
+			}
+
+			header{
+				border-radius: 8px;
+				padding: 30px;
+				background-color: #e5e5e5;
+				margin-left: var(--mar-left);
+				margin-right: var(--mar-right);
+				margin-top: var(--mar-top);
+				margin-bottom: var(--mar-bottom);
+
+			}
+
+			section.main-section{
+				display: flex;
+				flex-wrap: wrap;
+				margin-left: var(--mar-left);
+				margin-right: var(--mar-right);
+
+			}
+
+			section.main-section .flex-item-1{
+				flex: 20%;
+
+			}
+
+			section.main-section .flex-item-2{
+				flex: 60%;
+
+			}
+
+			section.main-section .flex-item-3{
+				flex: 20%;
+
+			}
+
+			ul.main-list{
+				list-style-type: none;
+			}
+
+			ul.main-list li{
+				border-radius: 8px;
+				text-align: center;
+				background-color: #e5e5e5;
+				margin-top: 4px;
+				margin-bottom: 4px;
+				padding: 8px;
+				
+			}
+			ul.main-list li a{
+				color: #000000;
+
+			}
+
+			section.main-section article{
+				padding: 20px;
+
+			}
+
+			section.main-section aside{
+				border-radius: 8px;
+				background-color: #e5e5e5;
+				padding: 20px;
+				margin-bottom: var(--mar-bottom);
+
+			}
+
+			footer{
+				border-radius: 8px;
+				margin-left: var(--mar-left);
+				margin-right: var(--mar-right);
+				padding: 15px;
+				background-color: #e5e5e5;
+
+			}
+
+			@media (max-width: 600px){
+				.flex-item-1, .flex-item-2, .flex-item-3{
+					flex: 100%;
+
+				}
+
+			}
+			
+		</style>
+		
+	</head>
+
+	<body>
+		<header class="text-center">
+			<h1>Hello World!</h1>
+
+		</header>
+
+		<section class="main-section">
+			<nav class="flex-item-1">
+				<ul class="main-list">
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+					<li><a href="#">Link 3</a></li>
+					<li><a href="#">Link 4</a></li>
+				</ul>
+			</nav>
+
+			<article class="flex-item-2">
+				<h2>Lorem Ipsum</h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+			</article>
+
+			<aside class="flex-item-3">
+				<h2>About</h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+			</aside>
+		</section>
+
+		<footer class="text-center">
+			<p>© copyright w3schools.com</p>
+			
+		</footer>
+
+		<script type="text/javascript">
+			
+		</script>
+	</body>
+</html>

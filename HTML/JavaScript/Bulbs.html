@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			*{
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+
+			h1{
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+
+			p{
+				margin-top: 20px;
+				margin-bottom: 20px;
+
+			}
+
+			div{
+				margin-top: 5px;
+				margin-bottom: 5px;
+			}
+
+			.text-center{
+				text-align: center;
+			}
+
+			div.div-tomato{
+				background-color: tomato;
+				color: #ffffff;
+				padding: 20px;
+
+			}
+
+			div.left-margin{
+				margin-left: 10px;
+				margin-right: 10px;
+
+			}
+
+			.text-center{
+				text-align: center;
+			}
+			
+		</style>
+		
+	</head>
+
+	<body>
+
+		<h1>My First JavaScript</h1>
+		<p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+
+		<img id="light" src="../images/pic_bulboff.gif" />
+
+		<button id="switchButton" onclick="bulbOnOff()">Bulb On/Off</button>
+
+		<script type="text/javascript">
+			let start = 2
+			function bulbOnOff(){
+				console.log("Inside Function")
+				console.log(document.getElementById('light').src)
+
+				if (start % 2 == 0 ) {
+					// Even
+					document.getElementById("light").src = "../images/pic_bulbon.gif"
+					document.getElementById("switchButton").innerHTML = "Bulb Off"
+
+				}
+				else{
+					//Odd
+					document.getElementById("light").src = "../images/pic_bulboff.gif"
+					document.getElementById("switchButton").innerHTML ="Bulb On"
+
+				}
+				start++
+
+			}
+
+			function light(sw) {
+				  var pic;
+				  if (sw == 0) {
+				    pic = "../images/pic_bulboff.gif"
+				  } else {
+				    pic = "../images/pic_bulbon.gif"
+				  }
+				  document.getElementById('light').src = pic;
+			
+			}
+
+		</script>
+		
+
+	</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		table{
+			width: 80%;
+			border-collapse: collapse;
+
+		}
+
+		table, th, td{
+/*			border: 2px solid #ddd;*/
+		}
+
+		.row{
+			text-align: center;
+		}
+
+		td, th{
+			padding: 12px;
+		}
+
+		tr:nth-child(even){
+			background-color: #f2f2f2;
+		}
+
+		tr.first-row{
+			background-color: #04AA6D;
+			color: #ffffff;
+		}
+
+		
+	</style>
+</head>
+<body>
+
+	<h2>Responsive Table</h2>
+	<p>A responsive table will display a horizontal scroll bar if the screen is too small.</p>
+
+	<p>We could add an <b>overflow-x:auto;</b> on a container element on the table.</p>
+
+	<p>This will ensure the horizontal scroll bar appears on the table not the screen.</p>
+
+
+	<div style="overflow-x:auto;">
+		<table>
+			<tr class="first-row">
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Points</th>
+      			<th>Points</th>
+      			<th>Points</th>
+      			<th>Points</th>
+      			<th>Points</th>
+      			<th>Points</th>
+      			<th>Points</th>
+      			<th>Points</th>
+      			<th>Points</th>
+      			<th>Points</th>
+			</tr>
+
+			    <tr class="row">
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+    </tr>
+    <tr class="row">
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+    </tr>
+    <tr class="row">
+      <td>Adam</td>
+      <td>Johnson</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+    </tr>
+
+
+		</table>
+		
+
+	</div>
+
+</body>
+</html>

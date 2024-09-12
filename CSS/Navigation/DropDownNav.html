@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="../../font-awesome-4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+
+		*{
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+				
+		}
+
+		body {
+  			font-family: Arial, Helvetica, sans-serif;
+  				
+		}
+
+		h1{
+			margin-top: 20px;
+			margin-bottom: 20px;
+
+		}
+
+		p{
+			margin-top: 20px;
+			margin-bottom: 20px;
+
+		}
+
+		nav{
+			background-color: #38444d;
+
+		}
+
+		ul{
+			display: flex;
+			justify-content: flex-start;
+			align-items: self-start;
+			list-style-type: none;
+		}
+
+/*		li.dropdown {
+  			display: inline-block;
+
+		}*/
+
+		ul li a, .dropbtn{
+			display: inline-block;
+			padding: 14px 16px;
+			color: #ffffff;
+			text-decoration: none;
+
+		}
+
+		ul li a:hover:not(.active){
+			background-color: #555;
+			color: #ffffff;
+
+		}
+
+		.dropdown-content {
+  			display: none;
+  			position: absolute;
+  			background-color: #f9f9f9;
+  			min-width: 160px;
+  			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  			z-index: 1;
+
+		}
+
+		.dropdown-content a {
+			display: block;
+  			color: black;
+  			padding: 12px 16px;
+  			text-decoration: none;
+  			text-align: left;
+
+		}
+
+		.dropdown-content a:hover {
+			background-color: #f1f1f1;
+
+		}
+
+		.dropdown:hover .dropdown-content {
+  			display: block;
+
+		}
+
+
+		.active{
+			background-color: #04AA6D;
+			text-decoration: underline;
+
+		}
+
+		@media screen and (max-width:600px){
+			ul{
+				flex-direction: column;
+				align-items: stretch;
+				text-align: center;
+
+			}
+
+			ul li a{
+				display: block;
+				width: 100%;
+
+
+			}
+
+			ul li:last-child{
+				margin-left: 0;
+
+			}
+
+			.dropdown-content{
+				left: 50%;
+			}
+
+		}
+		
+
+	</style>
+</head>
+<body>
+
+	<nav>
+		<ul>
+			<li><a class="active" href="#">Home</a></li>
+			<li><a href="#">News</a></li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Dropdown<i class="fa fa-caret-down" style="margin-left:4px;" aria-hidden="true"></i></a>
+				<div class="dropdown-content">
+					<a href="#link1">Link 1</a>
+					<a href="#link2">Link 2</a>
+					<a href="#link3">Link 3</a>
+				</div>
+			</li>
+		</ul>
+
+	</nav>
+
+	<section>
+		<h1>Dropdown Menu inside a Navigation Bar</h1>
+		<p>Hover over the "Dropdown" link to see the dropdown menu.</p>
+	</section>
+
+</body>
+</html>

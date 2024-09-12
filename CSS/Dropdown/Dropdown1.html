@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+				
+		}
+
+		body {
+  			font-family: Arial, Helvetica, sans-serif;
+  				
+		}
+
+		h1{
+			margin-top: 20px;
+			margin-bottom: 20px;
+
+		}
+
+		p{
+			margin-top: 20px;
+			margin-bottom: 20px;
+
+		}
+
+		.dropdown{
+			display: inline-block;
+			position: relative;
+			margin-left: 8px;
+
+		}
+
+		.dropdown-content{
+			display: none;
+			position: absolute;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			min-width: 160px;
+  			z-index: 1;
+
+		}
+
+		.dropdown:hover .dropdown-content{
+			display: block;
+
+		}
+
+		button{
+			padding: 14px 16px;
+			text-align: center;
+			background-color: rgb(0, 120, 0);
+			color: #ffffff;
+			font-size: 16px;
+			border: none;
+			cursor: pointer;
+		}
+
+		button:hover{
+			background-color: rgb(0, 160, 0);
+
+		}
+
+		ul{
+			list-style-type: none;
+			background-color: #f1f1f1;
+
+		}
+
+		ul li a{
+			display: inline-block;
+			padding: 14px 16px;
+			width: 100%;
+
+		}
+
+		ul li a:hover{
+			background-color: #ddd;
+		}
+
+	</style>
+</head>
+<body>
+	<h2>Dropdown Menu</h2>
+	<p>Move the mouse over the button to open thr dropdown menu.</p>
+
+
+	<div class="dropdown">
+		<button>Dropdown</button>
+
+		<div class="dropdown-content">
+			<ul>
+				<li><a href="#">Link 1</a></li>
+				<li><a href="#">Link 2</a></li>
+				<li><a href="#">Link 3</a></li>
+			</ul>
+			
+		</div>
+
+	</div>
+
+</body>
+</html>
